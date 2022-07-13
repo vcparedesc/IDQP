@@ -47,9 +47,15 @@ $$
 In both QP controllers, we are solving a similar opimization problem:
 
 $$
-\min_{\mathcal{X}} C(\mathcal{X}) + W(\mathcal{X}) \\
-s.t \hspace{1em} A_{ineq} \mathcal{X} \leq B_{ineq} \mathcal{X} \\
-s.t \hspace{1em} A_{eq} \mathcal{X} \leq B_{eq} \mathcal{X} \\
+\min_{\mathcal{X}} C(\mathcal{X}) + W(\mathcal{X})
+$$
+
+$$
+s.t \hspace{1em} A_{ineq} \mathcal{X} \leq B_{ineq} \mathcal{X}
+$$
+
+$$
+s.t \hspace{1em} A_{eq} \mathcal{X} \leq B_{eq} \mathcal{X} 
 $$
 
 where,
@@ -63,7 +69,10 @@ $W(\mathcal{X}) = \mathcal{X}^T E \mathcal{X}$ is a regularization term with $E=
 For **Task space PD control** we are using:
 
 $$
-C(\mathcal{X}) = || \dot{J}_y \dot{q}+J_y \ddot{q}-y*||^2\\
+C(\mathcal{X}) = || \dot{J}_y \dot{q}+J_y \ddot{q}-y*||^2
+$$
+
+$$
 y*=-Kpy-K_d\dot{y}
 $$
 
@@ -76,7 +85,10 @@ $$
 Note theta we include the CLFQP stability constraint in the inequality constraints. (Link to paper)
 
 $$
-L_gL_fy*u \leq -L_f^2y-cV(\eta) \\
+L_gL_fy*u \leq -L_f^2y-cV(\eta) 
+$$
+
+$$
 V(\eta) = \eta^T P_{\epsilon} \eta
 $$
 
