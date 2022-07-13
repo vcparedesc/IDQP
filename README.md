@@ -209,7 +209,7 @@ where, `nRel` is the number of rows of each jacobian. Note that, (for now) all t
 
 The control objectives specify the control ouputs to be solved. ```Kp``` and ```Kd``` are used only for Task Space PD control. The other parameters are function pointers of the form:
 
-- ```c```
+- ```c
   VectorXd y(VectorXd &q, VectorXd &dq)
   ```
 
