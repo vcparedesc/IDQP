@@ -65,7 +65,7 @@ $$
 
 where,
 
-$ \mathcal{X} = [\ddot{q}, u, \lambda]^T$
+$\mathcal{X} = [\ddot{q}, u, \lambda]^T$
 
 and,
 
