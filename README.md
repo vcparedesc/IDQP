@@ -33,8 +33,12 @@ where,
 And the control objectives (Assumed relative degree two) are specified as:
 
 $$
-y=h^a(t)-h^d(t,q,\dot{q}) \
-\dot{y}=J_y \dot{q}-\dot{h}^d \
+y=h^a(t)-h^d(t,q,\dot{q})
+$$
+$$
+\dot{y}=J_y \dot{q}-\dot{h}^d
+$$
+$$
 \ddot{y} = \dot{J}_y \dot{q}+ J_y \ddot{q} - \ddot{h}^d
 $$
 
