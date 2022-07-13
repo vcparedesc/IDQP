@@ -193,11 +193,16 @@ controller.addControlLimits(uMin, uMax);
 This can be manually constructed and represents:
 
 $$
-A^c_{eq} \mathcal{X} \leq B^c_{eq}
+A^c_{eq} \mathcal{X} = B^c_{eq}
+$$
+
+$$
+A^c_{ineq} \mathcal{X} \leq B^c_{ineq}
 $$
 
 ```c
 controller.addCustomEq(Aeq_DS, Beq_DS);
+controller.addCustomIneq(Aineq_DS, Bineq_DS);
 ```
 
 ### + Type I constraints
