@@ -1,5 +1,10 @@
 # README
+## Dependencies
+- Eigen3
+- osqp-cpp
+- c++17
 
+## Quick Guide
 This repo contains information of the QP based inverse dynamic controllers. For now there are two types of controlles:
 
 - Task Space PD control
